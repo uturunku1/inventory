@@ -1,0 +1,14 @@
+{% extends "inventory.html.twig" %}
+
+
+
+{% block display %}
+  <h2>Your inventory</h2>
+
+  {% for item in items %}
+    <h4>Item Name: {{ item.getItemName }}, Category: {{ item.category }}</h4>
+    <br>
+  {% endfor %}
+
+
+{% endblock %}
